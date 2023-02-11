@@ -1,0 +1,51 @@
+body{
+    margin: 100px;
+    background-color: rgb(246, 251, 255);
+}
+#validator-form{
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px 1px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+table{
+    margin: 0 auto;
+    width: 80%;
+}
+td[colspan="2"]{
+    text-align: center;
+}
+
+
+.err-color{
+    color: red;
+}
+.error{
+    border-color: red;
+}
+
+.display-hide{
+    display: none;
+}
+.display-show{
+    display: block;
+}
+
+.display-online{
+    background-color: rgb(234, 242, 250);
+    border: 1px solid rgb(163, 207, 251);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+select,
+textarea{
+    width: 100%;
+    height: 25px;
+    margin: 10px 0;
+}

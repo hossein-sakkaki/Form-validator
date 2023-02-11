@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Validators Form</title>
+</head>
+<body>
+            <form action="" method="post" name="validatorform" id="validator-form">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>ٰValidator Form</h2>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Full Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="FullName" id="full-name" class="" data-validate="notEmpty">
+                            <div id="validate-fullname" class="display-hide err-color"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" name="Email" id="email" data-validate="notEmpty validateEmail">
+                            <div id="validate-email" class="display-hide err-color"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Phone</label>
+                        </td>
+                        <td>
+                            <input type="text" name="Phone" id="phone" data-validate="notEmpty validatPhone">
+                            <div id="validate-phone" class="display-hide err-color"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="Password" id="password" data-validate="notEmpty validatePassword">
+                            <div id="validate-" class="display-hide err-color"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Retype Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="Password" id="password" data-validate="notEmpty retypePassword">
+                            <div id="validate-" class="display-hide err-color"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="country">Checkbox</label>
+                        </td>
+                        <td>
+                            <select name="country" id="country">
+                                <option value="0">United State</option>
+                                <option value="1">Canada</option>
+                                <option value="2">Australia</option>
+                                <option value="3">Germany</option>
+                                <option value="4">England</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Description</label>
+                        </td>
+                        <td>
+                            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
