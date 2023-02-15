@@ -26,7 +26,7 @@ class FormValidator{
                     const func_name = func_name_array[index];
                     var err_message = this[func_name](event.target);
                     if (err_message.length > 0){
-                        div_sibling.innerHTML += "- (" + err_message + ")" +"<br>";
+                        div_sibling.innerHTML += "- " + err_message +"<br>";
                         if (err_message.length > 0){
                             div_sibling.classList.remove("display-hide");
                         }else{
@@ -40,7 +40,7 @@ class FormValidator{
     
     notEmpty(el){
         if(el.value === ""){
-            return "You must fill this field";
+            return "Do not leave this field empty";
         }
         return "";
     }
@@ -59,9 +59,9 @@ class FormValidator{
         return "";
     }
     retypePassword(el){
-        const regex_contain = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
-        if (!regex_contain.test(el.value)){
-            return "Password is not valid";
+        let password = document.getElementById("password");
+        if ( password.value !== el.value ){
+            return "It's diffrent";
         }
         return "";
     }

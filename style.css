@@ -1,15 +1,19 @@
 body{
-    margin: 100px;
-    background-color: rgb(246, 251, 255);
+    margin: 150px;
+    background-color: #0B79DE;
+    color: #0BDED3;
 }
 #validator-form{
     width: 40%;
     margin: 0 auto;
     padding: 10px;
-    /* border: 1px solid black; */
     box-shadow: 0 0 10px 1px;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #145899;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#validator-form h2{
+    text-align: center;
 }
 table{
     margin: 0 auto;
@@ -18,34 +22,47 @@ table{
 td[colspan="2"]{
     text-align: center;
 }
-
-
 .err-color{
-    color: red;
+    color: #ff5500;
+    font-size: .7rem;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
 }
-.error{
-    border-color: red;
-}
-
 .display-hide{
     display: none;
 }
 .display-show{
     display: block;
 }
-
 .display-online{
-    background-color: rgb(234, 242, 250);
+    background-color: #67d1ef;
     border: 1px solid rgb(163, 207, 251);
 }
-
 input[type="text"],
 input[type="email"],
-input[type="password"],
-input[type="submit"],
-select,
-textarea{
+input[type="password"]{
     width: 100%;
     height: 25px;
     margin: 10px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 1px;
+    background-color:  #0BDED3;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.signature{
+    text-align: center;
+    font-size: .7rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.signature a{
+    text-decoration: none;
+    color: #0DFAAB;
 }
